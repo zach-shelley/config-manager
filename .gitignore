@@ -1,0 +1,9 @@
+# Environment files (secrets contained)
+.env
+.env.*
+!.env.example
+
+# System files
+.DS_Store
+# Backups
+*.backup
