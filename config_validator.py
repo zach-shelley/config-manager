@@ -48,12 +48,12 @@ def main():
     env_dict = read_env_file(sys.argv[1])
     is_valid, missing = validate_env(env_dict, required_variables)
     if is_valid:
-        print("Filename is valid")
+        print(f"{sys.argv[1]} is valid")
     else:
-        print("Filename is invalid")
+        print(f"{sys.argv[1]} is invalid")
         print(f"Missing: {', '.join(missing)}")
         sys.exit(1)
-        
+
 if __name__ == "__main__":
     main()
 
